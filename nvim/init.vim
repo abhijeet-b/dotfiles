@@ -1,0 +1,1 @@
+/home/jbendapudi/.config/nvim/init.vim

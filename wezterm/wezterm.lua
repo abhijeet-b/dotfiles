@@ -1,0 +1,1 @@
+/home/jbendapudi/.config/wezterm/wezterm.lua
