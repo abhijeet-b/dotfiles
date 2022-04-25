@@ -1,12 +1,13 @@
 # My personal setup 
 
-Distro: MX Linux currently, trying out Gentoo for the second time
+**Distro**: MX Linux currently, trying out Gentoo for the second time
 
-DE: KDE (with a Sweet Mars theme) 
+**DE**: KDE (with a Sweet Mars theme) 
 
-WM: KWin 
-Terminal: Wez's Terminal Emulator
+**WM**: KWin 
 
-Editor: Neovim 
+**Terminal**: Wez's Terminal Emulator
 
-Shell: Zsh
+**Editor**: Neovim 
+
+**Shell**: Zsh
