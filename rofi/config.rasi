@@ -1,0 +1,5 @@
+configuration {
+lines: 15;
+theme: "~/.config/rofi/squared-everforest.rasi";
+font: "B612 Mono 12";
+}

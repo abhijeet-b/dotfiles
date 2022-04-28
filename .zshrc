@@ -18,7 +18,9 @@ bindkey -e
 # Aliases
 #alias wttr="curl wttr.in"
 alias el="exa -l"
-
+alias XMOEDIT="vi ~/.config/xmonad/xmonad.hs"
+alias ubat="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage"
+alias vu="./.vu.sh"
 # Plugins - no manager for this one
 source ~/.zsh-plugins/agkozak-zsh-prompt/agkozak-zsh-prompt.plugin.zsh
 source ~/.zsh-plugins/copy-pasta/copy-pasta.plugin.zsh
