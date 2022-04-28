@@ -1,7 +1,7 @@
 source ~/.profile
 
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/jbendapudi/.zshrc'
+zstyle :compinstall filename '/home/jeet/.zshrc'
 
 autoload -Uz compinit
 compinit

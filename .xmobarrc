@@ -1,0 +1,29 @@
+        Config { 
+		-- font = "-*-Fixed-Bold-R-Normal-*-13-*-*-*-*-*-*-*"
+		font = "xft:Inter:size=11:antialias:true"
+                , borderColor = "black"
+                , border = TopB 
+                , bgColor = "#301934"
+                , fgColor = "white"
+                , position = BottomW L 100, 
+                , commands = [ Run Weather "KAUS" ["-t","<tempF> F / <skyCondition>","-L","60","-H","80","--normal","green","--high","red","--low","lightblue"] 36000
+                                , Run Network "wlo1" ["-t","<tx> kb up, <rx> kb down","-L"," 0 ","-H"," 32 ","--normal","green","--high","red"] 10
+                                , Run Cpu ["-t", "<total>% cpu","-L","3","-H","50","--normal","green","--high","red"] 10
+                                , Run Memory ["-t","<usedratio>% mem"] 10
+				, Run BatteryP ["BAT0"]
+				  ["-t", "<acstatus>"
+				  , "-L", "10", "-H", "80"
+				  , "-l", "red", "-h", "green"
+				  , "--", "-O", "Charging", "-o",  "<left>% juiced"
+				  ] 10
+				, Run Brightness ["--template", "<percent>% bright", "--", "-D", "intel_backlight"] 5
+				, Run Locks
+				, Run Com "/home/jeet/.volume.sh" [] "volume" 1 
+                                , Run Com "uname" ["-s","-r"] "" 36000
+                                , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+                                , Run StdinReader
+                                ]
+                , sepChar = "%"
+                , alignSep = "}{"
+                , template = "%StdinReader% | %battery% | %bright% | %volume% | %cpu% | %memory% | %wlo1% }{ %locks% | <fc=#63B76C>%date%</fc> | %uname% | %KAUS% "
+                }
