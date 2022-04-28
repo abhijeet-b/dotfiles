@@ -20,4 +20,4 @@ Other information (that's not configured here...)
 
 **Screen locker**: xsecurelock
 
-![Screenshot](2022-04-28_11-10.png?raw=true)
+![Screenshot](screenshot.jpg?raw=true)
