@@ -1,10 +1,8 @@
 # My personal setup 
 
-**Distro**: MX Linux currently, trying out Gentoo for the second time
+**Distro**: Linux Mint
 
-**DE**: KDE (with a Sweet Mars theme) 
-
-**WM**: KWin 
+**WM**: xmonad
 
 **Terminal**: Wez's Terminal Emulator
 
