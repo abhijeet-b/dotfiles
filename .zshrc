@@ -31,3 +31,8 @@ source ~/.zsh-plugins/up.zsh/up.plugin.zsh
 # Modifier settings
 AGKOZAK_LEFT_PROMPT_ONLY=1
 AGKOZAK_BLANK_LINES=1
+
+# croc settings
+PROG=croc
+_CLI_ZSH_AUTOCOMPLETE_HACK=1
+source /etc/zsh/zsh_autocomplete_croc
