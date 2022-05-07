@@ -14,7 +14,7 @@ import Graphics.X11.ExtraTypes.XF86
 
 normalBorderColor, focusedBordercolor :: String
 normalBorderColor = "black"
-focusedBordercolor = "violet"
+focusedBordercolor = "indigo"
 
 main :: IO ()
 main = xmonad 
@@ -28,7 +28,7 @@ main = xmonad
 myConfig = def
 	{ modMask = mod4Mask
 	, startupHook = myStartupHook
- 	, layoutHook = spacingWithEdge 5
+ 	, layoutHook = spacingWithEdge 10 
 	$ myLayout
 	, XMonad.focusedBorderColor = focusedBordercolor 
 	}
@@ -38,8 +38,8 @@ myConfig = def
 	, ("M-d"			, spawn "rofi -show drun")
 	, ("M-v"			, spawn "pavucontrol")
  	, ("M-S-q"			, spawn "rofi -show power-menu -modi power-menu:$HOME/.apps/rofi-power-menu/rofi-power-menu")
- 	, ("M-S-l"			, spawn "xsecurelock")
- 	, ("M-e"			, spawn "xmonad --recompile; xmonad --restart")
+        , ("M-e"			, spawn "xmonad --recompile; xmonad --restart")
+        , ("M-S-l"			, spawn "xsecurelock")
  	, ("M-q"			, kill)
  	, ("M-S-r"			, spawn "./.hdmi.sh") 
  	, ("<XF86MonBrightnessUp>"	, spawn "lux -a 4%")
@@ -48,7 +48,8 @@ myConfig = def
  	, ("<XF86AudioRaiseVolume>"	, spawn "pactl set-sink-volume @DEFAULT_SINK@ +3%")
  	, ("<XF86AudioLowerVolume>"	, spawn "pactl set-sink-volume @DEFAULT_SINK@ -3%")
       	, ("<Print>"			, spawn "flameshot screen -p Pictures/Screenshots/")
-      	, ("M-`"			, spawn "flameshot gui") 
+      	, ("M-w"			, spawn "flameshot gui")
+      	, ("M-<F1>"			, spawn "./.kbd.sh")
 	]
 
 myLayout = tiled ||| Mirror tiled ||| Full

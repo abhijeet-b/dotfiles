@@ -1,9 +1,9 @@
         Config { 
 		-- font = "-*-Fixed-Bold-R-Normal-*-13-*-*-*-*-*-*-*"
-		font = "xft:Inter:size=11:antialias:true"
-                , borderColor = "black"
+		font = "xft:Arimo Nerd Font Regular:size=10:antialias:true"
+                , borderColor = "#0E0A26"
                 , border = TopB 
-                , bgColor = "#301934"
+                , bgColor = "#0E0A26"
                 , fgColor = "white"
                 , position = BottomW L 100, 
                 , commands = [ Run Weather "KAUS" ["-t","<tempF> F / <skyCondition>","-L","60","-H","80","--normal","green","--high","red","--low","lightblue"] 36000
@@ -14,13 +14,13 @@
 				  ["-t", "<acstatus>"
 				  , "-L", "10", "-H", "80"
 				  , "-l", "red", "-h", "green"
-				  , "--", "-O", "Charging", "-o",  "<left>% juiced"
+				  , "--", "-O", "Charging / <left>% juicing", "-o",  "<left>% juiced"
 				  ] 10
-				, Run Brightness ["--template", "<percent>% bright", "--", "-D", "intel_backlight"] 5
+				, Run Brightness ["--template", "<percent>% illuminated", "--", "-D", "intel_backlight"] 5
 				, Run Locks
 				, Run Com "/home/jeet/.volume.sh" [] "volume" 1 
                                 , Run Com "uname" ["-s","-r"] "" 36000
-                                , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+                                , Run Date "%a %b%_d %Y %H:%M:%S" "date" 10
                                 , Run StdinReader
                                 ]
                 , sepChar = "%"
