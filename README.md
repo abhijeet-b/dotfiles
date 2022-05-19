@@ -1,6 +1,6 @@
 # My personal setup 
 
-**Distro**: (probably formerly, because I may need to go back to W10) Linux Mint
+**Distro**: (formerly, RIP) Linux Mint
 
 **WM**: xmonad
 
