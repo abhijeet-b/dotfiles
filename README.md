@@ -1,6 +1,6 @@
 # My personal setup 
 
-**Distro**: (formerly, RIP) Linux Mint
+**Distro**: (formerly) Linux Mint
 
 **WM**: xmonad
 
